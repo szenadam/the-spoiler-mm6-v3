@@ -1,41 +1,64 @@
 body {
-    background-color: #b0c0d0;
-    color: #000000;
+  background-color: #b0c0d0;
+  color: #000000;
 }
 
 .no-border {
-    border: 0;
+  border: 0;
+}
+
+.border {
+  border: 1px solid black;
 }
 
 .w-1240 {
-    width: 1240px;
+  width: 1240px;
 }
 
 .w-440 {
-    width: 440px;
+  width: 440px;
 }
 
 .w-130 {
-    width: 130px;
+  width: 130px;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.w-660 {
+  width: 660px;
 }
 
 .logo {
-    height: 110px;
-    width: 440px;
+  height: 110px;
+  width: 440px;
 }
 
 .left {
-    text-align: left;
+  text-align: left;
 }
 
 .map-img {
-    width: 244px;
-    height: 244px;
-    display: block;
+  width: 244px;
+  height: 244px;
+  display: block;
+}
+
+.marks {
+  height: 130px;
+  width: 660px;
 }
 
 .world-map {
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 0;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 0;
+  margin-bottom: 1em;
+}
+
+#ma td, table {
+  border: 1px solid black;
+  margin-bottom: 1em;
 }
