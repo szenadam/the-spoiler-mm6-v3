@@ -27,3 +27,15 @@ body {
 .left {
     text-align: left;
 }
+
+.map-img {
+    width: 244px;
+    height: 244px;
+    display: block;
+}
+
+.world-map {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 0;
+}
