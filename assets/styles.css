@@ -1,0 +1,29 @@
+body {
+    background-color: #b0c0d0;
+    color: #000000;
+}
+
+.no-border {
+    border: 0;
+}
+
+.w-1240 {
+    width: 1240px;
+}
+
+.w-440 {
+    width: 440px;
+}
+
+.w-130 {
+    width: 130px;
+}
+
+.logo {
+    height: 110px;
+    width: 440px;
+}
+
+.left {
+    text-align: left;
+}
