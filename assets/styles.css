@@ -70,13 +70,15 @@ body {
   margin-bottom: 1em;
 }
 
-.mb-1 {
-  margin-bottom: 1em;
+.mb-2 {
+  margin-bottom: 2em;
 }
 
 #ma td,
 #ma table,
 #ns td,
-#ns table {
+#ns table,
+#ns_gw td,
+#ns_gw table {
   border: 1px solid black;
 }
