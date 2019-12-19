@@ -7,6 +7,10 @@ body {
   border: 0;
 }
 
+.dungeon {
+  background-color: #a0b0c0;
+}
+
 .w-110 { width: 110px; }
 .w-120 { width: 120px; }
 .w-130 { width: 130px; }
