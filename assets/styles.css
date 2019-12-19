@@ -35,6 +35,10 @@ body {
   width: 660px;
 }
 
+.w-795 {
+  width: 795px;
+}
+
 .w-1240 {
   width: 1240px;
 }
@@ -66,12 +70,12 @@ body {
   margin-bottom: 1em;
 }
 
-#ma td,
-#ma table {
-  border: 1px solid black;
+.mb-1 {
   margin-bottom: 1em;
 }
 
+#ma td,
+#ma table,
 #ns td,
 #ns table {
   border: 1px solid black;
