@@ -97,6 +97,10 @@ body {
 #ns_gw td,
 #ns_gw table,
 #ns_at td,
-#ns_at table {
+#ns_at table,
+#ns_gf td,
+#ns_gf table,
+#ci td,
+#ci table {
   border: 1px solid black;
 }
