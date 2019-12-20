@@ -95,6 +95,8 @@ body {
 #ns td,
 #ns table,
 #ns_gw td,
-#ns_gw table {
+#ns_gw table,
+#ns_at td,
+#ns_at table {
   border: 1px solid black;
 }
