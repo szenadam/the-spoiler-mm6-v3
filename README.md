@@ -12,3 +12,4 @@ be more modern.
 - Make code as accessible as possible
 - Remove deprecated attributes
 - Use classes
+- Modernize the design a little (firstly it should look like exactly the original site)
