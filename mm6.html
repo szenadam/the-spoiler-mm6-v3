@@ -6989,361 +6989,1188 @@
   </table>
 </section>
 
-<h2><a id="tsp">Spells</a></h2>
-<p>The key for the type column below:
-  <br><code>O </code>= Offensive spells
-  <br><code>D </code>= Defensive spells
-  <br><code>H </code>= Healing, restoring or removing spells
-  <br><code>U </code>= Utility spells</p>
-<table>
-<colgroup><col align="left"><col span="3" align="center"><col span="4" align="left"></colgroup>
- <tbody><tr><th align="center">Fire Spells</th><th>Type</th><th>Resist</th><th>Mana</th><th align="center">Description</th><th align="center">Normal</th><th align="center">Expert</th><th align="center">Master
- </th></tr><tr>
-  <td>Torch Light</td><td>U</td><td>-</td><td>1</td><td>Increases the radius of light.<br>Since 21h to 5h, or indoor any time.
-  </td><td>Duration is skill * 1h.</td><td>Brighter light.</td><td>Brightest light.
- </td></tr><tr>
-  <td>Flame Arrow</td><td>O</td><td>Fire</td><td>2</td><td>Single flying arrow.<br>1D8 damage.
-  </td><td>Casting cost 2 SP.</td><td>Casting cost 1 SP.<br>Faster recovery rate.</td><td>Casting cost 0 SP.<br>Fastest recovery rate.
- </td></tr><tr>
-  <td>Protection from Fire</td><td>D</td><td>-</td><td>3</td><td>Increases all character's resistance.<br>Duration is skill * 1h.
-  </td><td>Skill * 1 resistance.</td><td>Skill * 2 resistance.</td><td>Skill * 3 resistance.
- </td></tr><tr><td>Fire Bolt</td><td>O</td><td>Fire</td><td>4</td><td>Single flying bolt.<br>Skill * 1D4 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Haste</td><td>U</td><td>-</td><td>5</td><td>Reduces recovery rate.<br>Wearing off causes weakness.
-  </td><td>Duration is skill * 1m + 1h.</td><td>Spell affects entire party.</td><td>Duration is skill * 3m + 1 hour.
- </td></tr><tr>
-  <td>Fireball</td><td>O</td><td>Fire</td><td>8</td><td>Single flying exploding ball.<br>Skill * 1D6 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Ring of Fire</td><td>O</td><td>Fire</td><td>10</td><td>Hurt all monsters around the party.<br>Skill + 6 damage.
-  </td><td>Small radius.</td><td>Larger radius.</td><td>Faster recovery rate.
- </td></tr><tr>
-  <td>Fire Blast</td><td>O</td><td>Fire</td><td>15</td><td>Multiple flying shots.<br>Skill * 1D3 + 4 damage (every shots).
-  </td><td>3 shots.<br>Slow recovery rate.</td><td>5 shots.<br>Moderate recovery rate.</td><td>7 shots.<br>Fast recovery rate.
- </td></tr><tr>
-  <td>Meteor Shower</td><td>O</td><td>Fire</td><td>20</td><td>Multiple falling meteors. Works outdoors only.<br>Skill + 8 damage (every meteors).
-  </td><td>8 meteors.<br>Slow recovery rate.</td><td>12 meteors.<br>Moderate recovery rate.</td><td>16 meteors.<br>Fast recovery rate.
- </td></tr><tr>
-  <td>Inferno</td><td>O</td><td>Fire</td><td>25</td><td>Burns all monsters in sight. Works indoors only.<br>Skill + 12 damage.
-  </td><td>Slow recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Incinerate</td><td>O</td><td>Fire</td><td>30</td><td>Single flying bolt.<br>Skill * 1D15 + 15 damage.
-  </td><td>Slow recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
-</td></tr></tbody></table>
-<br>
-<table>
-<colgroup><col align="left"><col span="3" align="center"><col span="4" align="left"></colgroup>
- <tbody><tr><th align="center">Air Spells</th><th>Type</th><th>Resist</th><th>Mana</th><th align="center">Description</th><th align="center">Normal</th><th align="center">Expert</th><th align="center">Master
- </th></tr><tr>
-  <td>Wizard Eye</td><td>U</td><td>-</td><td>1</td><td>Automap with important points.<br>Duration is skill * 1h.
-  </td><td>Shows terrain and monsters.</td><td>Shows treasure.</td><td>Shows misc things
- </td></tr><tr>
-  <td>Static Charge</td><td>O</td><td>Elec</td><td>2</td><td>Single flying bolt.<br>1D5+1 damage (always hits).
-  </td><td>Casting cost 2 SP.</td><td>Casting cost 1 SP.<br>Faster recovery rate.</td><td>Casting cost 0 SP.<br>Fastest recovery rate.
- </td></tr><tr>
-  <td>Protection from Electricity</td><td>D</td><td>-</td><td>3</td><td>Increases all character's resistance.<br>Duration is skill * 1h.
-  </td><td>Skill * 1 resistance.</td><td>Skill * 2 resistance.</td><td>Skill * 3 resistance.
- </td></tr><tr>
-  <td>Sparks</td><td>O</td><td>Elec</td><td>4</td><td>Multiple falling sparks.<br>Skill + 2 damage (every spark)
-  </td><td>3 sparks.<br>Moderate recovery rate.</td><td>5 sparks.<br>Faster recovery rate.</td><td>7 sparks.<br>Fastest recovery rate.
- </td></tr><tr>
-  <td>Feather Fall</td><td>U</td><td>-</td><td>5</td><td>Prevents from being hurt when falling.<br>Affects entire party.
-  </td><td>Duration is skill * 5m.</td><td>Duration is skill * 10m.</td><td>Duration is skill * 1h.
- </td></tr><tr>
-  <td>Shield</td><td>D</td><td>-</td><td>8</td><td>Halves damage from physical ranged attacks.<br>Slows the missiles.
-  </td><td>Duration is skill * 5m +1h.</td><td>Affects entire party.</td><td>Duration is skill * 15m +1h.
- </td></tr><tr>
-  <td>Lightning Bolt</td><td>O</td><td>Elec</td><td>10</td><td>Single flying bolt.<br>Skill * 1D8 damage (always hits).
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Jump</td><td>U</td><td>-</td><td>15</td><td>Launches the party up.<br>No falling damage from the jump.
-  </td><td>Slow recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Implosion</td><td>O</td><td>Phys</td><td>20</td><td>Single flying bolt.<br>Skill * 1d10 + 10 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Fly</td><td>U</td><td>-</td><td>25</td><td>Affects entire party. Works outdoors only.<br>1 SP / 5m. No falling damage.
-  </td><td>Duration is skill * 5m.</td><td>Duration is skill * 10m.</td><td>Duration is skill * 1h.
- </td></tr><tr>
-  <td>Starburst</td><td>O</td><td>Elec</td><td>30</td><td>Multiple falling stars. Works outdoors only.<br>Skill + 20 damage (every stars).
-  </td><td>8 stars.<br>Slow recovery rate.</td><td>12 stars.<br>Moderate recovery rate.</td><td>16 stars.<br>Fast recovery rate.
-</td></tr></tbody></table>
-<br>
-<table>
-<colgroup><col align="left"><col span="3" align="center"><col span="4" align="left"></colgroup>
- <tbody><tr><th align="center">Water Spells</th><th>Type</th><th>Resist</th><th>Mana</th><th align="center">Description</th><th align="center">Normal</th><th align="center">Expert</th><th align="center">Master
- </th></tr><tr>
-  <td>Awaken</td><td>H</td><td>-</td><td>1</td><td>Awakens all sleeping characters.
-  </td><td>Works if asleep &lt; skill * 3m.</td><td>Works if asleep &lt; skill * 1h.</td><td>Works if asleep &lt; skill * 1d.
- </td></tr><tr>
-  <td>Cold Beam</td><td>O</td><td>Cold</td><td>2</td><td>Single flying bolt.<br>1D5+1 (always hits)
-  </td><td>Casting cost 2 SP.</td><td>Casting cost 1 SP.<br>Faster recovery rate.</td><td>Casting cost 0 SP.<br>Fastest recovery rate.
- </td></tr><tr>
-  <td>Protection from Cold</td><td>D</td><td>-</td><td>3</td><td>Increases all character's resistance.<br>Duration is skill * 1h.
-  </td><td>Skill * 1 resistance.</td><td>Skill * 2 resistance.</td><td>Skill * 3 resistance.
- </td></tr><tr>
-  <td>Poison Spray</td><td>O</td><td>Pois</td><td>4</td><td>Multiple flying shots.<br>Skill * 1D2 +2 (every shots)
-  </td><td>1 shot.<br>Moderate recovery rate.</td><td>3 shots.<br>Faster recovery rate.</td><td>5 shots.<br>Fastest recovery rate.
- </td></tr><tr>
-  <td>Water Walk</td><td>U</td><td>-</td><td>5</td><td>Can walk on water without drowning.<br>1 SP / 20m. Works outdoors only.
-  </td><td>Duration is skill * 5m.</td><td>Duration is skill * 10m.</td><td>Duration is skill * 1h.
- </td></tr><tr>
-  <td>Ice Bolt</td><td>O</td><td>Cold</td><td>8</td><td>Single flying bolt.<br>Skill * 1D7 damage (always hits)
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Enchant Item</td><td>U</td><td>-</td><td>10</td><td>Imbue a normal item with magical powers.<br>The chance is skill * 10%.
-  </td><td>Weak enchantments only.</td><td>Stronger enchantments.</td><td>Allows enchantment of weapons.
- </td></tr><tr>
-  <td>Acid Burst</td><td>O</td><td>Pois</td><td>15</td><td>Single flying shot.<br>Skill * 1D9 + 9 damage (always hits)
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Town Portal</td><td>U</td><td>-</td><td>20</td><td>Teleports the party to the central fountain of towns.<br>The chance is skill * 10%.
-  </td><td>Outdoors only.</td><td>Indoors OK.</td><td>Gives the choice of destination.
- </td></tr><tr>
-  <td>Ice Blast</td><td>O</td><td>Cold</td><td>25</td><td>Single flying shattering ball.<br>Skill * 1D2 + 12 (every 7 shards).
-  </td><td>Slow recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Lloyd's Beacon</td><td>U</td><td>-</td><td>30</td><td>Set a receiver marker.<br>Teleports the party to marked point.
-  </td><td>1 Beacon.<br>Duration is skill * 1h.</td><td>3 Beacons.<br>Duration is skill * 1d.</td><td>5 Beacons. <br>Duration is skill * 7d.
-</td></tr></tbody></table>
-<br>
-<table>
-<colgroup><col align="left"><col span="3" align="center"><col span="4" align="left"></colgroup>
- <tbody><tr><th align="center">Earth Spells</th><th>Type</th><th>Resist</th><th>Mana</th><th align="center">Description</th><th align="center">Normal</th><th align="center">Expert</th><th align="center">Master
- </th></tr><tr>
-  <td>Stun</td><td>O</td><td>Magic</td><td>1</td><td>Single flying bolt.<br>Stuns the enemy, and knocks back.
-  </td><td>Normal effect.</td><td>Stronger effect.</td><td>Strongest effect.
- </td></tr><tr>
-  <td>Magic Arrow</td><td>O</td><td>Phys</td><td>2</td><td>Single flying arrow.<br>1D6+2 damage.
-  </td><td>Casting cost 2 SP.</td><td>Casting cost 1 SP.<br>Faster recovery rate.</td><td>Casting cost 0 SP.<br>Fastest recovery rate.
- </td></tr><tr>
-  <td>Protection from Magic</td><td>D</td><td>-</td><td>3</td><td>Increases all character's resistance.<br>Duration is skill * 1h.
-  </td><td>Skill * 1 resistance.</td><td>Skill * 2 resistance.</td><td>Skill * 3 resistance.
- </td></tr><tr>
-  <td>Deadly Swarm</td><td>O</td><td>Phys</td><td>4</td><td>Single flying bolt.<br>1D3 + 5 damage (always hits).
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Stone Skin</td><td>D</td><td>-</td><td>5</td><td>Skill + 5 AC.
-  </td><td>Duration is skill * 5m +1h.</td><td>Affects entire party.</td><td>Skill *15 m +1h.
- </td></tr><tr>
-  <td>Blades</td><td>O</td><td>Phys</td><td>8</td><td>Single flying bolt.<br>Skill * 1D5 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Stone to Flesh</td><td>H</td><td>-</td><td>10
-  </td><td>Removes the stoned condition.
-  </td><td>Works if stoned &lt; skill * 3m.</td><td>Works if stoned &lt; skill * 1h.</td><td>Works if stoned &lt; skill * 1d.
- </td></tr><tr>
-  <td>Rock Blast</td><td>O</td><td>Phys</td><td>15</td><td>Single flying exploding rock.<br>Skill * 1D8 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Turn to Stone</td><td>O</td><td>Magic</td><td>20</td><td>Single flying bolt. Turning is temporarily.<br>The statues are invulnerable.
-  </td><td>Duration is skill * 5m.</td><td>Duration is skill * 10m.</td><td>Duration is skill * 20m.
- </td></tr><tr>
-  <td>Death Blossom</td><td>O</td><td>Phys</td><td>25</td><td>Single falling rock. Works outdoors only.<br>Skill + 20 damage.
-  </td><td>Moderate recovery rate.</td><td>Larger radius.<br>Faster recovery.</td><td>Largest radius.<br>Fastest recovery.
- </td></tr><tr>
-  <td>Mass Distortion</td><td>O</td><td>Magic</td><td>30</td><td>Single flying bolt.<br>Skill * 2% + 25% of hit points damage.
-  </td><td>Slow rate of recovery.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
-</td></tr></tbody></table>
-<br>
-<table>
-<colgroup><col align="left"><col span="3" align="center"><col span="4" align="left"></colgroup>
- <tbody><tr><th align="center">Spirit Spells</th><th>Type</th><th>Resist</th><th>Mana</th><th align="center">Description</th><th align="center">Normal</th><th align="center">Expert</th><th align="center">Master
- </th></tr><tr>
-  <td>Spirit Arrow</td><td>O</td><td>Magic</td><td>1</td><td>Single flying bolt.<br>1D6 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Casting cost 0 SP.
- </td></tr><tr>
-  <td>Bless</td><td>U</td><td>-</td><td>2</td><td>Increases the attack value.<br>Skill + 5 to hit.
-  </td><td>Duration is skill * 5m + 1h.</td><td>Affects entire party.</td><td>Duration is skill * 15m + 1h.
- </td></tr><tr>
-  <td>Healing Touch</td><td>H</td><td>-</td><td>3</td><td>Heals a single character.
-  </td><td>1D5 + 2 HP.</td><td>1D5 + 4 HP.</td><td>1D5 + 6 HP.
- </td></tr><tr>
-  <td>Lucky Day</td><td>U</td><td>-</td><td>4</td><td>Increases the luck value.<br>Duration is skill * 1h.
-  </td><td>Skill * 2 + 10 value.</td><td>Skill * 3 + 10 value.</td><td>Affects entire party.
- </td></tr><tr>
-  <td>Remove Curse</td><td>H</td><td>-</td><td>5
-  </td><td>Removes the cursed condition.
-  </td><td>Works if cursed &lt; skill * 3m.</td><td>Works if cursed &lt; skill * 1h.</td><td>Works if cursed &lt; skill * 1d.
- </td></tr><tr>
-  <td>Guardian Angel</td><td>U</td><td>-</td><td>8</td><td>When the party died, half money will loose only.<br>Affects entire party. Duration is skill * 1h.
-  </td><td>Party is restored with 1 HP.</td><td>Party is restored with half HP.</td><td>Party is restored with full HP.
- </td></tr><tr>
-  <td>Heroism</td><td>U</td><td>-</td><td>10</td><td>Increases the damage value.<br>Skill + 5 to damage.
-  </td><td>Duration is skill * 5m + 1h.</td><td>Affects entire party.</td><td>Duration is skill * 15m + 1h.
- </td></tr><tr>
-  <td>Turn Undead</td><td>O</td><td>Magic</td><td>15</td><td>Forces all visible undeads to flee.
-  <br>Duration is skill * 3m +3m.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Raise Dead</td><td>H</td><td>-</td><td>20</td><td>Removes the dead condition.<br>Causes weakness.
-  </td><td>Works if dead &lt; skill * 3m.</td><td>Works if dead &lt; skill * 1h.</td><td>Works if dead &lt; skill * 1d.
- </td></tr><tr>
-  <td>Shared Life</td><td>H</td><td>-</td><td>25</td><td>All current hit points are totaled,<br>and distributed back to the characters.
-  </td><td>Total HP + Skill<br>for distribution</td><td>Total HP + Skill * 2 HP<br>for distribution</td><td>Total HP + Skill * 3 HP<br>for distribution
- </td></tr><tr>
-  <td>Resurrection</td><td>H</td><td>-</td><td>30
-  </td><td>Removes the eradicated condition.<br>Causes weakness.
-  </td><td>Works if eradicated &lt; skill * 3m.</td><td>Works if eradicated &lt; skill * 1h.</td><td>Works if eradicated &lt; skill * 1d.
- </td></tr><tr>
-</tr></tbody></table>
-<br>
-<table>
-<colgroup><col align="left"><col span="3" align="center"><col span="4" align="left"></colgroup>
- <tbody><tr><th align="center">Mind Spells</th><th>Type</th><th>Resist</th><th>Mana</th><th align="center">Description</th><th align="center">Normal</th><th align="center">Expert</th><th align="center">Master
- </th></tr><tr>
-  <td>Meditation</td><td>U</td><td>-</td><td>1</td><td>Increases the intellect and personality value.<br>Duration is sSkill * 1h.
-  </td><td>Skill * 2 + 10 value.</td><td>Skill * 3 + 10 value.</td><td>Affects entire party.
- </td></tr><tr>
-  <td>Remove Fear</td><td>H</td><td>-</td><td>2</td><td>Removes the afraid condition.
-  </td><td>Works if afraid &lt; skill * 3m.</td><td>Works if afraid &lt; skill * 1h.</td><td>Works if afraid &lt; skill * 1d.
- </td></tr><tr>
-  <td>Mind Blast</td><td>O</td><td>Magic</td><td>3</td><td>Single flying bolt.<br>Skill * 1D2 + 5 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Precision</td><td>U</td><td>-</td><td>4</td><td>Increases the accuracy value.<br>Duration is skill * 1h.
-  </td><td>Skill * 2 + 10 value.</td><td>Skill * 3 + 10 value.</td><td>Affects entire party.
- </td></tr><tr>
-  <td>Cure Paralysis</td><td>H</td><td>-</td><td>5</td><td>Removes the paralyzed condition.
-  </td><td>Works if paralyzed &lt; skill * 3m.</td><td>Works if paralyzed &lt; skill * 1h.</td><td>Works if paralyzed &lt; skill * 1d.
- </td></tr><tr>
-  <td>Charm</td><td>O</td><td>Magic</td><td>8</td><td>Calm single enemy.<br>If takes any damage, will hostile again.
-  </td><td>Duration is skill * 3m.</td><td>Duration is skill * 6m.</td><td>Duration is skill * 12m.
- </td></tr><tr>
-  <td>Mass Fear</td><td>O</td><td>Magic</td><td>10</td><td>Forces all visible enemy to flee.<br>Duration is skill * 3m. Don't work on undeads.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Feeblemind</td><td>O</td><td>Magic</td><td>15</td><td>Removes casting ability temporarily.<br>Duration is skill * 5m. Don't work against ranged bolts.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Cure Insanity</td><td>H</td><td>-</td><td>20</td><td>Removes the insane condition.<br>Causes weakness.
-  </td><td>Works if insane &lt; skill * 3m.</td><td>Works if insane &lt; skill * 1h.</td><td>Works if insane &lt; skill * 1d.
- </td></tr><tr>
-  <td>Psychic Shock</td><td>O</td><td>Magic</td><td>25</td><td>Single flying bolt.<br>Skill * 1D12 + 12 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Telekinesis</td><td>U</td><td>-</td><td>30</td><td>Manipulates an object at a distance.
-  </td><td>Strength of effect is skill.</td><td>Strength of effect is skill * 2.</td><td>Strength of effect is skill * 3.
-</td></tr></tbody></table>
-<br>
-<table>
-<colgroup><col align="left"><col span="3" align="center"><col span="4" align="left"></colgroup>
- <tbody><tr><th align="center">Body Spells</th><th>Type</th><th>Resist</th><th>Mana</th><th align="center">Description</th><th align="center">Normal</th><th align="center">Expert</th><th align="center">Master
- </th></tr><tr>
-  <td>Cure Weakness</td><td>H</td><td>-</td><td>1</td><td>Removes the weak condition.
-  </td><td>Works if weak &lt; skill * 3m.</td><td>Works if weak &lt; skill * 1h.</td><td>Works if weak &lt; skill * 1d.
- </td></tr><tr>
-  <td>First Aid</td><td>H</td><td>-</td><td>2</td><td>Heals a single character.<br>Recovery is reduced by skill.
-  </td><td>5 HP.</td><td>7 HP.</td><td>10 HP.
- </td></tr><tr>
-  <td>Protection from Poison</td><td>D</td><td>-</td><td>3</td><td>Increases all character's resistance.<br>Duration is skill * 1h.
-  </td><td>Skill * 1 resistance.</td><td>Skill * 2 resistance.</td><td>Skill * 3 resistance.
- </td></tr><tr>
-  <td>Harm</td><td>O</td><td>Magic</td><td>4</td><td>Single flying bolt.<br>Skill * 1D2 + 8 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Cure Wounds</td><td>H</td><td>-</td><td>5</td><td>Heals a single character.<br>Skill * 2 + 5 HP.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Cure Poison</td><td>H</td><td>-</td><td>8</td><td>Removes the posined condition.
-  </td><td>Works if poisoned &lt; skill * 3m.</td><td>Works if poisoned &lt; skill * 1h.</td><td>Works if poisoned &lt; skill * 1d.
- </td></tr><tr>
-  <td>Speed</td><td>U</td><td>-</td><td>10</td><td>Increases the speed value.<br>Duration is skill * 1h.
-  </td><td>Skill * 2 + 10 value.</td><td>Skill * 3 + 10 value.</td><td>Affects entire party.
- </td></tr><tr>
-  <td>Cure Disease</td><td>H</td><td>-</td><td>15</td><td>Removes the diseased condition.
-  </td><td>Works if diseased &lt; skill * 3m.</td><td>Works if diseased &lt; skill * 1h.</td><td>Works if diseased &lt; skill * 1d.
- </td></tr><tr>
-  <td>Power</td><td>U</td><td>-</td><td>20</td><td>Increases the strength value.<br>Duration is skill * 1h.
-  </td><td>Skill * 2 + 10 value.</td><td>Skill * 3 + 10 value.</td><td>Affects entire party.
- </td></tr><tr>
-  <td>Flying Fist</td><td>O</td><td>Magic</td><td>25</td><td>Single flying bolt.<br>Skill * 1D5 + 30 damage.
-  </td><td>Slow recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Power Cure</td><td>H</td><td>-</td><td>30</td><td>Heals the party.<br>Skill * 2 + 10 HP.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
-</td></tr></tbody></table>
-<br>
-<table>
-<colgroup><col align="left"><col span="3" align="center"><col span="4" align="left"></colgroup>
- <tbody><tr><th align="center">Light Spells</th><th>Type</th><th>Resist</th><th>Mana</th><th align="center">Description</th><th align="center">Normal</th><th align="center">Expert</th><th align="center">Master
- </th></tr><tr>
-  <td>Create Food</td><td>U</td><td>-</td><td>20</td><td>Creates food for party, if have less<br>real food than would be created.
-  </td><td>Skill / 10 + 1 food.</td><td>Skill * 2 / 10 + 1 food.</td><td>Skill * 3 / 10 + 1 food.
- </td></tr><tr>
-  <td>Golden Touch</td><td>U</td><td>-</td><td>25</td><td>Converts a single item into gold equal.<br>The chance is skill * 10%.
-  </td><td>Item to 40% gold value.</td><td>Item to 60% gold value.</td><td>Item to 80% gold value.
- </td></tr><tr>
-  <td>Dispel Magic</td><td>H</td><td>-</td><td>30</td><td>Removes all spells on the party.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Slow</td><td>O</td><td>Magic</td><td>35</td><td>Halves the speed and the attacking rate<br>of a single enemy. Duration is skill * 3m.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Destroy Undead</td><td>O</td><td>Magic</td><td>40</td><td>Single flying bolt. Works on undead only.<br>Skill * 1d16 + 16 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Day of the Gods</td><td>U</td><td>-</td><td>45</td><td>Power, Meditation, Speed, Lucky Day, Precision,<br>GA on party. Increases main values. Duration is skill * 2h.
-  </td><td>Effects increase with skill * 2.</td><td>Effects increase with skill * 3.</td><td>Effects increase with skill * 4.
- </td></tr><tr>
-  <td>Prismatic Light</td><td>O</td><td>Magic</td><td>50</td><td>Hurts all monsters in sight. Works indoors only.<br>Skill + 25 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Hour of Power</td><td>U</td><td>-</td><td>55
-  </td><td>Haste, Heroism, Shield, Stone Skin,<br>Bless on party. Duration is skill * 2h.
-  </td><td>Effects increase with skill * 2.</td><td>Effects increase with skill * 3.</td><td>Effects increase with skill * 4.
- </td></tr><tr>
-  <td>Paralyze</td><td>O</td><td>Magic</td><td>60</td><td>Single flying bolt.<br>Duration is skill * 3m. The monsters cannot retaliate.
-  </td><td>Slow recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Sun Ray</td><td>O</td><td>Fire</td><td>65</td><td>Single fying bolt. Skill * 1D20 + 20.<br>It can only work outdoors and during the day
-  </td><td>Very slow recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Divine Intervention</td><td>H</td><td>-</td><td>70</td><td>Restores the party. Aging the caster 10 years.<br>Works on rising or setting of the sun only.
-  </td><td>Works once per day only.</td><td>Works twice per day only.</td><td>Works three times per day only.
-</td></tr></tbody></table>
-<br>
-<table>
-<colgroup><col align="left"><col span="3" align="center"><col span="4" align="left"></colgroup>
- <tbody><tr><th align="center">Light Spells</th><th>Type</th><th>Resist</th><th>Mana</th><th align="center">Description</th><th align="center">Normal</th><th align="center">Expert</th><th align="center">Master
- </th></tr><tr>
-  <td>Reanimate</td><td>U</td><td>-</td><td>20
-  </td><td>Raises a lifeless creature from the dead.
-  </td><td>Skill * 10 HP (up to max.)</td><td>Skill * 20 HP (up to max.)</td><td>Skill * 30 HP (up to max.)
- </td></tr><tr>
-  <td>Toxic Cloud</td><td>O</td><td>Pois</td><td>30</td><td>Single flying bolt.<br>Skill * 1D10 +25 damage.
-  </td><td>Moderate recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Mass Curse</td><td>O</td><td>Magic</td><td>40</td><td>Curses all monsters in sight.
-  </td><td>Duration is skill * 2m.</td><td>Duration is skill * 3m.</td><td>Duration is skill * 4m.
- </td></tr><tr>
-  <td>Shrapmetal</td><td>O</td><td>Phys</td><td>50
-  </td><td>Multiple flying fragments.<br>Skill * 1D6 +  damage (every shots).
-  </td><td>3 fragments.<br>Moderate recovery rate.</td><td>5 fragments.<br>Faster recovery rate.</td><td>7 fragments.<br>Fastest recovery rate.
- </td></tr><tr>
-  <td>Shrinking Ray</td><td>O</td><td>Magic</td><td>60</td><td>Single flying bolt. Duration is skill * 5m.<br>A shrunken monster can cause less damage.
-  </td><td>Reducing to one half normal.</td><td>Reducing to one third normal.</td><td>Reducing to one fourth normal.
- </td></tr><tr>
-  <td>Day of Protection</td><td>D</td><td>-</td><td>70
-  </td><td>Protection from Fire, Electricity, Cold, Poison,<br>Magic, Feather Fall, Wizard Eye on party.
-  </td><td>Effects increase with skill * 2.</td><td>Effects increase with skill * 3.</td><td>Effects increase with skill * 4.
- </td></tr><tr>
-  <td>Finger of Death</td><td>O</td><td>Magic</td><td>80</td><td>Single flying bolt<br>Slay a single creature.
-  </td><td>The chance is skill * 3%.</td><td>The chance is skill * 4%.</td><td>The chance is skill * 5%.
- </td></tr><tr>
-  <td>Moon Ray</td><td>O</td><td>Magic</td><td>90</td><td>Heals the party and damages all monsters in sight.<br>Outdoors works at night only. Skill * 1D4 damage/HP.
-  </td><td>Slow recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Dragon Breath</td><td>O</td><td>Pois</td><td>100</td><td>Single flying bolt.<br>Skill * 1D25 damage.
-  </td><td>Slow recovery rate.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
- </td></tr><tr>
-  <td>Armageddon</td><td>O</td><td>Magic</td><td>150</td><td>Hurts everybody, the party too.<br>Skill + 50 damage. Outdoors works only.
-  </td><td>Works once per day only.</td><td>Works twice per day only.</td><td>Works three times per day only.
- </td></tr><tr>
-  <td>Dark Containment</td><td>O</td><td>Magic</td><td>200</td><td>Single flying exploding bolt.<br>Causes random effects.
-  </td><td>Slow rate of recovery.</td><td>Faster recovery rate.</td><td>Fastest recovery rate.
-</td></tr></tbody></table>
+<section id="tsp">
+  <h2>Spells</h2>
+  <p>The key for the type column below:
+    <br><code>O </code>= Offensive spells
+    <br><code>D </code>= Defensive spells
+    <br><code>H </code>= Healing, restoring or removing spells
+    <br><code>U </code>= Utility spells
+  </p>
+  <table>
+    <colgroup>
+      <col class="left">
+      <col span="3" class="center">
+      <col span="4" class="left">
+    </colgroup>
+    <tbody>
+    <tr>
+      <th class="center">Fire Spells</th>
+      <th>Type</th>
+      <th>Resist</th>
+      <th>Mana</th>
+      <th class="center">Description</th>
+      <th class="center">Normal</th>
+      <th class="center">Expert</th>
+      <th class="center">Master</th>
+    </tr>
+    <tr>
+      <td>Torch Light</td>
+      <td>U</td>
+      <td>-</td>
+      <td>1</td>
+      <td>Increases the radius of light.<br>Since 21h to 5h, or indoor any time.</td>
+      <td>Duration is skill * 1h.</td>
+      <td>Brighter light.</td>
+      <td>Brightest light.</td>
+    </tr>
+    <tr>
+      <td>Flame Arrow</td>
+      <td>O</td>
+      <td>Fire</td>
+      <td>2</td>
+      <td>Single flying arrow.<br>1D8 damage.</td>
+      <td>Casting cost 2 SP.</td>
+      <td>Casting cost 1 SP.<br>Faster recovery rate.</td>
+      <td>Casting cost 0 SP.<br>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Protection from Fire</td>
+      <td>D</td>
+      <td>-</td>
+      <td>3</td>
+      <td>Increases all character's resistance.<br>Duration is skill * 1h.</td>
+      <td>Skill * 1 resistance.</td>
+      <td>Skill * 2 resistance.</td>
+      <td>Skill * 3 resistance.</td>
+    </tr>
+    <tr>
+      <td>Fire Bolt</td>
+      <td>O</td>
+      <td>Fire</td>
+      <td>4</td>
+      <td>Single flying bolt.<br>Skill * 1D4 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Haste</td>
+      <td>U</td>
+      <td>-</td>
+      <td>5</td>
+      <td>Reduces recovery rate.<br>Wearing off causes weakness.</td>
+      <td>Duration is skill * 1m + 1h.</td>
+      <td>Spell affects entire party.</td>
+      <td>Duration is skill * 3m + 1 hour.</td>
+    </tr>
+    <tr>
+      <td>Fireball</td>
+      <td>O</td>
+      <td>Fire</td>
+      <td>8</td>
+      <td>Single flying exploding ball.<br>Skill * 1D6 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Ring of Fire</td>
+      <td>O</td>
+      <td>Fire</td>
+      <td>10</td>
+      <td>Hurt all monsters around the party.<br>Skill + 6 damage.</td>
+      <td>Small radius.</td>
+      <td>Larger radius.</td>
+      <td>Faster recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Fire Blast</td>
+      <td>O</td>
+      <td>Fire</td>
+      <td>15</td>
+      <td>Multiple flying shots.<br>Skill * 1D3 + 4 damage (every shots).</td>
+      <td>3 shots.<br>Slow recovery rate.</td>
+      <td>5 shots.<br>Moderate recovery rate.</td>
+      <td>7 shots.<br>Fast recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Meteor Shower</td>
+      <td>O</td>
+      <td>Fire</td>
+      <td>20</td>
+      <td>Multiple falling meteors. Works outdoors only.<br>Skill + 8 damage (every meteors).</td>
+      <td>8 meteors.<br>Slow recovery rate.</td>
+      <td>12 meteors.<br>Moderate recovery rate.</td>
+      <td>16 meteors.<br>Fast recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Inferno</td>
+      <td>O</td>
+      <td>Fire</td>
+      <td>25</td>
+      <td>Burns all monsters in sight. Works indoors only.<br>Skill + 12 damage.</td>
+      <td>Slow recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Incinerate</td>
+      <td>O</td>
+      <td>Fire</td>
+      <td>30</td>
+      <td>Single flying bolt.<br>Skill * 1D15 + 15 damage.</td>
+      <td>Slow recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <colgroup>
+      <col class="left">
+      <col span="3" class="center">
+      <col span="4" class="left">
+    </colgroup>
+    <tbody>
+    <tr>
+      <th class="center">Air Spells</th>
+      <th>Type</th>
+      <th>Resist</th>
+      <th>Mana</th>
+      <th class="center">Description</th>
+      <th class="center">Normal</th>
+      <th class="center">Expert</th>
+      <th class="center">Master</th>
+    </tr>
+    <tr>
+      <td>Wizard Eye</td>
+      <td>U</td>
+      <td>-</td>
+      <td>1</td>
+      <td>Automap with important points.<br>Duration is skill * 1h.</td>
+      <td>Shows terrain and monsters.</td>
+      <td>Shows treasure.</td>
+      <td>Shows misc things</td>
+    </tr>
+    <tr>
+      <td>Static Charge</td>
+      <td>O</td>
+      <td>Elec</td>
+      <td>2</td>
+      <td>Single flying bolt.<br>1D5+1 damage (always hits).</td>
+      <td>Casting cost 2 SP.</td>
+      <td>Casting cost 1 SP.<br>Faster recovery rate.</td>
+      <td>Casting cost 0 SP.<br>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Protection from Electricity</td>
+      <td>D</td>
+      <td>-</td>
+      <td>3</td>
+      <td>Increases all character's resistance.<br>Duration is skill * 1h.</td>
+      <td>Skill * 1 resistance.</td>
+      <td>Skill * 2 resistance.</td>
+      <td>Skill * 3 resistance.</td>
+    </tr>
+    <tr>
+      <td>Sparks</td>
+      <td>O</td>
+      <td>Elec</td>
+      <td>4</td>
+      <td>Multiple falling sparks.<br>Skill + 2 damage (every spark)</td>
+      <td>3 sparks.<br>Moderate recovery rate.</td>
+      <td>5 sparks.<br>Faster recovery rate.</td>
+      <td>7 sparks.<br>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Feather Fall</td>
+      <td>U</td>
+      <td>-</td>
+      <td>5</td>
+      <td>Prevents from being hurt when falling.<br>Affects entire party.</td>
+      <td>Duration is skill * 5m.</td>
+      <td>Duration is skill * 10m.</td>
+      <td>Duration is skill * 1h.</td>
+    </tr>
+    <tr>
+      <td>Shield</td>
+      <td>D</td>
+      <td>-</td>
+      <td>8</td>
+      <td>Halves damage from physical ranged attacks.<br>Slows the missiles.</td>
+      <td>Duration is skill * 5m +1h.</td>
+      <td>Affects entire party.</td>
+      <td>Duration is skill * 15m +1h.</td>
+    </tr>
+    <tr>
+      <td>Lightning Bolt</td>
+      <td>O</td>
+      <td>Elec</td>
+      <td>10</td>
+      <td>Single flying bolt.<br>Skill * 1D8 damage (always hits).</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Jump</td>
+      <td>U</td>
+      <td>-</td>
+      <td>15</td>
+      <td>Launches the party up.<br>No falling damage from the jump.</td>
+      <td>Slow recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Implosion</td>
+      <td>O</td>
+      <td>Phys</td>
+      <td>20</td>
+      <td>Single flying bolt.<br>Skill * 1d10 + 10 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Fly</td>
+      <td>U</td>
+      <td>-</td>
+      <td>25</td>
+      <td>Affects entire party. Works outdoors only.<br>1 SP / 5m. No falling damage.</td>
+      <td>Duration is skill * 5m.</td>
+      <td>Duration is skill * 10m.</td>
+      <td>Duration is skill * 1h.</td>
+    </tr>
+    <tr>
+      <td>Starburst</td>
+      <td>O</td>
+      <td>Elec</td>
+      <td>30</td>
+      <td>Multiple falling stars. Works outdoors only.<br>Skill + 20 damage (every stars).</td>
+      <td>8 stars.<br>Slow recovery rate.</td>
+      <td>12 stars.<br>Moderate recovery rate.</td>
+      <td>16 stars.<br>Fast recovery rate.</td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <colgroup>
+      <col class="left">
+      <col span="3" class="center">
+      <col span="4" class="left">
+    </colgroup>
+    <tbody>
+    <tr>
+      <th class="center">Water Spells</th>
+      <th>Type</th>
+      <th>Resist</th>
+      <th>Mana</th>
+      <th class="center">Description</th>
+      <th class="center">Normal</th>
+      <th class="center">Expert</th>
+      <th class="center">Master</th>
+    </tr>
+    <tr>
+      <td>Awaken</td>
+      <td>H</td>
+      <td>-</td>
+      <td>1</td>
+      <td>Awakens all sleeping characters.</td>
+      <td>Works if asleep &lt; skill * 3m.</td>
+      <td>Works if asleep &lt; skill * 1h.</td>
+      <td>Works if asleep &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+      <td>Cold Beam</td>
+      <td>O</td>
+      <td>Cold</td>
+      <td>2</td>
+      <td>Single flying bolt.<br>1D5+1 (always hits)</td>
+      <td>Casting cost 2 SP.</td>
+      <td>Casting cost 1 SP.<br>Faster recovery rate.</td>
+      <td>Casting cost 0 SP.<br>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Protection from Cold</td>
+      <td>D</td>
+      <td>-</td>
+      <td>3</td>
+      <td>Increases all character's resistance.<br>Duration is skill * 1h.</td>
+      <td>Skill * 1 resistance.</td>
+      <td>Skill * 2 resistance.</td>
+      <td>Skill * 3 resistance.</td>
+    </tr>
+    <tr>
+      <td>Poison Spray</td>
+      <td>O</td>
+      <td>Pois</td>
+      <td>4</td>
+      <td>Multiple flying shots.<br>Skill * 1D2 +2 (every shots)</td>
+      <td>1 shot.<br>Moderate recovery rate.</td>
+      <td>3 shots.<br>Faster recovery rate.</td>
+      <td>5 shots.<br>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Water Walk</td>
+      <td>U</td>
+      <td>-</td>
+      <td>5</td>
+      <td>Can walk on water without drowning.<br>1 SP / 20m. Works outdoors only.</td>
+      <td>Duration is skill * 5m.</td>
+      <td>Duration is skill * 10m.</td>
+      <td>Duration is skill * 1h.</td>
+    </tr>
+    <tr>
+      <td>Ice Bolt</td>
+      <td>O</td>
+      <td>Cold</td>
+      <td>8</td>
+      <td>Single flying bolt.<br>Skill * 1D7 damage (always hits)</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Enchant Item</td>
+      <td>U</td>
+      <td>-</td>
+      <td>10</td>
+      <td>Imbue a normal item with magical powers.<br>The chance is skill * 10%.</td>
+      <td>Weak enchantments only.</td>
+      <td>Stronger enchantments.</td>
+      <td>Allows enchantment of weapons.</td>
+    </tr>
+    <tr>
+      <td>Acid Burst</td>
+      <td>O</td>
+      <td>Pois</td>
+      <td>15</td>
+      <td>Single flying shot.<br>Skill * 1D9 + 9 damage (always hits)</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Town Portal</td>
+      <td>U</td>
+      <td>-</td>
+      <td>20</td>
+      <td>Teleports the party to the central fountain of towns.<br>The chance is skill * 10%.</td>
+      <td>Outdoors only.</td>
+      <td>Indoors OK.</td>
+      <td>Gives the choice of destination.</td>
+    </tr>
+    <tr>
+      <td>Ice Blast</td>
+      <td>O</td>
+      <td>Cold</td>
+      <td>25</td>
+      <td>Single flying shattering ball.<br>Skill * 1D2 + 12 (every 7 shards).</td>
+      <td>Slow recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Lloyd's Beacon</td>
+      <td>U</td>
+      <td>-</td>
+      <td>30</td>
+      <td>Set a receiver marker.<br>Teleports the party to marked point.</td>
+      <td>1 Beacon.<br>Duration is skill * 1h.</td>
+      <td>3 Beacons.<br>Duration is skill * 1d.</td>
+      <td>5 Beacons. <br>Duration is skill * 7d.</td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <colgroup>
+      <col class="left">
+      <col span="3" class="center">
+      <col span="4" class="left">
+    </colgroup>
+    <tbody>
+    <tr>
+      <th class="center">Earth Spells</th>
+      <th>Type</th>
+      <th>Resist</th>
+      <th>Mana</th>
+      <th class="center">Description</th>
+      <th class="center">Normal</th>
+      <th class="center">Expert</th>
+      <th class="center">Master</th>
+    </tr>
+    <tr>
+      <td>Stun</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>1</td>
+      <td>Single flying bolt.<br>Stuns the enemy, and knocks back.</td>
+      <td>Normal effect.</td>
+      <td>Stronger effect.</td>
+      <td>Strongest effect.</td>
+    </tr>
+    <tr>
+      <td>Magic Arrow</td>
+      <td>O</td>
+      <td>Phys</td>
+      <td>2</td>
+      <td>Single flying arrow.<br>1D6+2 damage.</td>
+      <td>Casting cost 2 SP.</td>
+      <td>Casting cost 1 SP.<br>Faster recovery rate.</td>
+      <td>Casting cost 0 SP.<br>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Protection from Magic</td>
+      <td>D</td>
+      <td>-</td>
+      <td>3</td>
+      <td>Increases all character's resistance.<br>Duration is skill * 1h.</td>
+      <td>Skill * 1 resistance.</td>
+      <td>Skill * 2 resistance.</td>
+      <td>Skill * 3 resistance.</td>
+    </tr>
+    <tr>
+      <td>Deadly Swarm</td>
+      <td>O</td>
+      <td>Phys</td>
+      <td>4</td>
+      <td>Single flying bolt.<br>1D3 + 5 damage (always hits).</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Stone Skin</td>
+      <td>D</td>
+      <td>-</td>
+      <td>5</td>
+      <td>Skill + 5 AC.</td>
+      <td>Duration is skill * 5m +1h.</td>
+      <td>Affects entire party.</td>
+      <td>Skill *15 m +1h.</td>
+    </tr>
+    <tr>
+      <td>Blades</td>
+      <td>O</td>
+      <td>Phys</td>
+      <td>8</td>
+      <td>Single flying bolt.<br>Skill * 1D5 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Stone to Flesh</td>
+      <td>H</td>
+      <td>-</td>
+      <td>10</td>
+      <td>Removes the stoned condition.</td>
+      <td>Works if stoned &lt; skill * 3m.</td>
+      <td>Works if stoned &lt; skill * 1h.</td>
+      <td>Works if stoned &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+      <td>Rock Blast</td>
+      <td>O</td>
+      <td>Phys</td>
+      <td>15</td>
+      <td>Single flying exploding rock.<br>Skill * 1D8 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Turn to Stone</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>20</td>
+      <td>Single flying bolt. Turning is temporarily.<br>The statues are invulnerable.</td>
+      <td>Duration is skill * 5m.</td>
+      <td>Duration is skill * 10m.</td>
+      <td>Duration is skill * 20m.</td>
+    </tr>
+    <tr>
+      <td>Death Blossom</td>
+      <td>O</td>
+      <td>Phys</td>
+      <td>25</td>
+      <td>Single falling rock. Works outdoors only.<br>Skill + 20 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Larger radius.<br>Faster recovery.</td>
+      <td>Largest radius.<br>Fastest recovery.</td>
+    </tr>
+    <tr>
+      <td>Mass Distortion</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>30</td>
+      <td>Single flying bolt.<br>Skill * 2% + 25% of hit points damage.</td>
+      <td>Slow rate of recovery.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <colgroup>
+      <col class="left">
+      <col span="3" class="center">
+      <col span="4" class="left">
+    </colgroup>
+    <tbody>
+    <tr>
+      <th class="center">Spirit Spells</th>
+      <th>Type</th>
+      <th>Resist</th>
+      <th>Mana</th>
+      <th class="center">Description</th>
+      <th class="center">Normal</th>
+      <th class="center">Expert</th>
+      <th class="center">Master</th>
+    </tr>
+    <tr>
+      <td>Spirit Arrow</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>1</td>
+      <td>Single flying bolt.<br>1D6 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Casting cost 0 SP.</td>
+    </tr>
+    <tr>
+      <td>Bless</td>
+      <td>U</td>
+      <td>-</td>
+      <td>2</td>
+      <td>Increases the attack value.<br>Skill + 5 to hit.</td>
+      <td>Duration is skill * 5m + 1h.</td>
+      <td>Affects entire party.</td>
+      <td>Duration is skill * 15m + 1h.</td>
+    </tr>
+    <tr>
+      <td>Healing Touch</td>
+      <td>H</td>
+      <td>-</td>
+      <td>3</td>
+      <td>Heals a single character.</td>
+      <td>1D5 + 2 HP.</td>
+      <td>1D5 + 4 HP.</td>
+      <td>1D5 + 6 HP.</td>
+    </tr>
+    <tr>
+      <td>Lucky Day</td>
+      <td>U</td>
+      <td>-</td>
+      <td>4</td>
+      <td>Increases the luck value.<br>Duration is skill * 1h.</td>
+      <td>Skill * 2 + 10 value.</td>
+      <td>Skill * 3 + 10 value.</td>
+      <td>Affects entire party.</td>
+    </tr>
+    <tr>
+      <td>Remove Curse</td>
+      <td>H</td>
+      <td>-</td>
+      <td>5</td>
+      <td>Removes the cursed condition.</td>
+      <td>Works if cursed &lt; skill * 3m.</td>
+      <td>Works if cursed &lt; skill * 1h.</td>
+      <td>Works if cursed &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+      <td>Guardian Angel</td>
+      <td>U</td>
+      <td>-</td>
+      <td>8</td>
+      <td>When the party died, half money will loose only.<br>Affects entire party. Duration is skill * 1h.</td>
+      <td>Party is restored with 1 HP.</td>
+      <td>Party is restored with half HP.</td>
+      <td>Party is restored with full HP.</td>
+    </tr>
+    <tr>
+      <td>Heroism</td>
+      <td>U</td>
+      <td>-</td>
+      <td>10</td>
+      <td>Increases the damage value.<br>Skill + 5 to damage.</td>
+      <td>Duration is skill * 5m + 1h.</td>
+      <td>Affects entire party.</td>
+      <td>Duration is skill * 15m + 1h.</td>
+    </tr>
+    <tr>
+      <td>Turn Undead</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>15</td>
+      <td>Forces all visible undeads to flee.
+        <br>Duration is skill * 3m +3m.
+      </td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Raise Dead</td>
+      <td>H</td>
+      <td>-</td>
+      <td>20</td>
+      <td>Removes the dead condition.<br>Causes weakness.</td>
+      <td>Works if dead &lt; skill * 3m.</td>
+      <td>Works if dead &lt; skill * 1h.</td>
+      <td>Works if dead &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+      <td>Shared Life</td>
+      <td>H</td>
+      <td>-</td>
+      <td>25</td>
+      <td>All current hit points are totaled,<br>and distributed back to the characters.</td>
+      <td>Total HP + Skill<br>for distribution</td>
+      <td>Total HP + Skill * 2 HP<br>for distribution</td>
+      <td>Total HP + Skill * 3 HP<br>for distribution</td>
+    </tr>
+    <tr>
+      <td>Resurrection</td>
+      <td>H</td>
+      <td>-</td>
+      <td>30</td>
+      <td>Removes the eradicated condition.<br>Causes weakness.</td>
+      <td>Works if eradicated &lt; skill * 3m.</td>
+      <td>Works if eradicated &lt; skill * 1h.</td>
+      <td>Works if eradicated &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <colgroup>
+      <col class="left">
+      <col span="3" class="center">
+      <col span="4" class="left">
+    </colgroup>
+    <tbody>
+    <tr>
+      <th class="center">Mind Spells</th>
+      <th>Type</th>
+      <th>Resist</th>
+      <th>Mana</th>
+      <th class="center">Description</th>
+      <th class="center">Normal</th>
+      <th class="center">Expert</th>
+      <th class="center">Master</th>
+    </tr>
+    <tr>
+      <td>Meditation</td>
+      <td>U</td>
+      <td>-</td>
+      <td>1</td>
+      <td>Increases the intellect and personality value.<br>Duration is sSkill * 1h.</td>
+      <td>Skill * 2 + 10 value.</td>
+      <td>Skill * 3 + 10 value.</td>
+      <td>Affects entire party.</td>
+    </tr>
+    <tr>
+      <td>Remove Fear</td>
+      <td>H</td>
+      <td>-</td>
+      <td>2</td>
+      <td>Removes the afraid condition.</td>
+      <td>Works if afraid &lt; skill * 3m.</td>
+      <td>Works if afraid &lt; skill * 1h.</td>
+      <td>Works if afraid &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+      <td>Mind Blast</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>3</td>
+      <td>Single flying bolt.<br>Skill * 1D2 + 5 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Precision</td>
+      <td>U</td>
+      <td>-</td>
+      <td>4</td>
+      <td>Increases the accuracy value.<br>Duration is skill * 1h.</td>
+      <td>Skill * 2 + 10 value.</td>
+      <td>Skill * 3 + 10 value.</td>
+      <td>Affects entire party.</td>
+    </tr>
+    <tr>
+      <td>Cure Paralysis</td>
+      <td>H</td>
+      <td>-</td>
+      <td>5</td>
+      <td>Removes the paralyzed condition.</td>
+      <td>Works if paralyzed &lt; skill * 3m.</td>
+      <td>Works if paralyzed &lt; skill * 1h.</td>
+      <td>Works if paralyzed &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+      <td>Charm</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>8</td>
+      <td>Calm single enemy.<br>If takes any damage, will hostile again.</td>
+      <td>Duration is skill * 3m.</td>
+      <td>Duration is skill * 6m.</td>
+      <td>Duration is skill * 12m.</td>
+    </tr>
+    <tr>
+      <td>Mass Fear</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>10</td>
+      <td>Forces all visible enemy to flee.<br>Duration is skill * 3m. Don't work on undeads.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Feeblemind</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>15</td>
+      <td>Removes casting ability temporarily.<br>Duration is skill * 5m. Don't work against ranged bolts.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Cure Insanity</td>
+      <td>H</td>
+      <td>-</td>
+      <td>20</td>
+      <td>Removes the insane condition.<br>Causes weakness.</td>
+      <td>Works if insane &lt; skill * 3m.</td>
+      <td>Works if insane &lt; skill * 1h.</td>
+      <td>Works if insane &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+      <td>Psychic Shock</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>25</td>
+      <td>Single flying bolt.<br>Skill * 1D12 + 12 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Telekinesis</td>
+      <td>U</td>
+      <td>-</td>
+      <td>30</td>
+      <td>Manipulates an object at a distance.</td>
+      <td>Strength of effect is skill.</td>
+      <td>Strength of effect is skill * 2.</td>
+      <td>Strength of effect is skill * 3.</td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <colgroup>
+      <col class="left">
+      <col span="3" class="center">
+      <col span="4" class="left">
+    </colgroup>
+    <tbody>
+    <tr>
+      <th class="center">Body Spells</th>
+      <th>Type</th>
+      <th>Resist</th>
+      <th>Mana</th>
+      <th class="center">Description</th>
+      <th class="center">Normal</th>
+      <th class="center">Expert</th>
+      <th class="center">Master</th>
+    </tr>
+    <tr>
+      <td>Cure Weakness</td>
+      <td>H</td>
+      <td>-</td>
+      <td>1</td>
+      <td>Removes the weak condition.</td>
+      <td>Works if weak &lt; skill * 3m.</td>
+      <td>Works if weak &lt; skill * 1h.</td>
+      <td>Works if weak &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+      <td>First Aid</td>
+      <td>H</td>
+      <td>-</td>
+      <td>2</td>
+      <td>Heals a single character.<br>Recovery is reduced by skill.</td>
+      <td>5 HP.</td>
+      <td>7 HP.</td>
+      <td>10 HP.</td>
+    </tr>
+    <tr>
+      <td>Protection from Poison</td>
+      <td>D</td>
+      <td>-</td>
+      <td>3</td>
+      <td>Increases all character's resistance.<br>Duration is skill * 1h.</td>
+      <td>Skill * 1 resistance.</td>
+      <td>Skill * 2 resistance.</td>
+      <td>Skill * 3 resistance.</td>
+    </tr>
+    <tr>
+      <td>Harm</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>4</td>
+      <td>Single flying bolt.<br>Skill * 1D2 + 8 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Cure Wounds</td>
+      <td>H</td>
+      <td>-</td>
+      <td>5</td>
+      <td>Heals a single character.<br>Skill * 2 + 5 HP.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Cure Poison</td>
+      <td>H</td>
+      <td>-</td>
+      <td>8</td>
+      <td>Removes the posined condition.</td>
+      <td>Works if poisoned &lt; skill * 3m.</td>
+      <td>Works if poisoned &lt; skill * 1h.</td>
+      <td>Works if poisoned &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+      <td>Speed</td>
+      <td>U</td>
+      <td>-</td>
+      <td>10</td>
+      <td>Increases the speed value.<br>Duration is skill * 1h.</td>
+      <td>Skill * 2 + 10 value.</td>
+      <td>Skill * 3 + 10 value.</td>
+      <td>Affects entire party.</td>
+    </tr>
+    <tr>
+      <td>Cure Disease</td>
+      <td>H</td>
+      <td>-</td>
+      <td>15</td>
+      <td>Removes the diseased condition.</td>
+      <td>Works if diseased &lt; skill * 3m.</td>
+      <td>Works if diseased &lt; skill * 1h.</td>
+      <td>Works if diseased &lt; skill * 1d.</td>
+    </tr>
+    <tr>
+      <td>Power</td>
+      <td>U</td>
+      <td>-</td>
+      <td>20</td>
+      <td>Increases the strength value.<br>Duration is skill * 1h.</td>
+      <td>Skill * 2 + 10 value.</td>
+      <td>Skill * 3 + 10 value.</td>
+      <td>Affects entire party.</td>
+    </tr>
+    <tr>
+      <td>Flying Fist</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>25</td>
+      <td>Single flying bolt.<br>Skill * 1D5 + 30 damage.</td>
+      <td>Slow recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Power Cure</td>
+      <td>H</td>
+      <td>-</td>
+      <td>30</td>
+      <td>Heals the party.<br>Skill * 2 + 10 HP.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <colgroup>
+      <col class="left">
+      <col span="3" class="center">
+      <col span="4" class="left">
+    </colgroup>
+    <tbody>
+    <tr>
+      <th class="center">Light Spells</th>
+      <th>Type</th>
+      <th>Resist</th>
+      <th>Mana</th>
+      <th class="center">Description</th>
+      <th class="center">Normal</th>
+      <th class="center">Expert</th>
+      <th class="center">Master</th>
+    </tr>
+    <tr>
+      <td>Create Food</td>
+      <td>U</td>
+      <td>-</td>
+      <td>20</td>
+      <td>Creates food for party, if have less<br>real food than would be created.</td>
+      <td>Skill / 10 + 1 food.</td>
+      <td>Skill * 2 / 10 + 1 food.</td>
+      <td>Skill * 3 / 10 + 1 food.</td>
+    </tr>
+    <tr>
+      <td>Golden Touch</td>
+      <td>U</td>
+      <td>-</td>
+      <td>25</td>
+      <td>Converts a single item into gold equal.<br>The chance is skill * 10%.</td>
+      <td>Item to 40% gold value.</td>
+      <td>Item to 60% gold value.</td>
+      <td>Item to 80% gold value.</td>
+    </tr>
+    <tr>
+      <td>Dispel Magic</td>
+      <td>H</td>
+      <td>-</td>
+      <td>30</td>
+      <td>Removes all spells on the party.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Slow</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>35</td>
+      <td>Halves the speed and the attacking rate<br>of a single enemy. Duration is skill * 3m.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Destroy Undead</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>40</td>
+      <td>Single flying bolt. Works on undead only.<br>Skill * 1d16 + 16 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Day of the Gods</td>
+      <td>U</td>
+      <td>-</td>
+      <td>45</td>
+      <td>Power, Meditation, Speed, Lucky Day, Precision,<br>GA on party. Increases main values. Duration is skill * 2h.</td>
+      <td>Effects increase with skill * 2.</td>
+      <td>Effects increase with skill * 3.</td>
+      <td>Effects increase with skill * 4.</td>
+    </tr>
+    <tr>
+      <td>Prismatic Light</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>50</td>
+      <td>Hurts all monsters in sight. Works indoors only.<br>Skill + 25 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Hour of Power</td>
+      <td>U</td>
+      <td>-</td>
+      <td>55</td>
+      <td>Haste, Heroism, Shield, Stone Skin,<br>Bless on party. Duration is skill * 2h.</td>
+      <td>Effects increase with skill * 2.</td>
+      <td>Effects increase with skill * 3.</td>
+      <td>Effects increase with skill * 4.</td>
+    </tr>
+    <tr>
+      <td>Paralyze</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>60</td>
+      <td>Single flying bolt.<br>Duration is skill * 3m. The monsters cannot retaliate.</td>
+      <td>Slow recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Sun Ray</td>
+      <td>O</td>
+      <td>Fire</td>
+      <td>65</td>
+      <td>Single fying bolt. Skill * 1D20 + 20.<br>It can only work outdoors and during the day</td>
+      <td>Very slow recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Divine Intervention</td>
+      <td>H</td>
+      <td>-</td>
+      <td>70</td>
+      <td>Restores the party. Aging the caster 10 years.<br>Works on rising or setting of the sun only.</td>
+      <td>Works once per day only.</td>
+      <td>Works twice per day only.</td>
+      <td>Works three times per day only.</td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <table>
+    <colgroup>
+      <col class="left">
+      <col span="3" class="center">
+      <col span="4" class="left">
+    </colgroup>
+    <tbody>
+    <tr>
+      <th class="center">Light Spells</th>
+      <th>Type</th>
+      <th>Resist</th>
+      <th>Mana</th>
+      <th class="center">Description</th>
+      <th class="center">Normal</th>
+      <th class="center">Expert</th>
+      <th class="center">Master</th>
+    </tr>
+    <tr>
+      <td>Reanimate</td>
+      <td>U</td>
+      <td>-</td>
+      <td>20</td>
+      <td>Raises a lifeless creature from the dead.</td>
+      <td>Skill * 10 HP (up to max.)</td>
+      <td>Skill * 20 HP (up to max.)</td>
+      <td>Skill * 30 HP (up to max.)</td>
+    </tr>
+    <tr>
+      <td>Toxic Cloud</td>
+      <td>O</td>
+      <td>Pois</td>
+      <td>30</td>
+      <td>Single flying bolt.<br>Skill * 1D10 +25 damage.</td>
+      <td>Moderate recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Mass Curse</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>40</td>
+      <td>Curses all monsters in sight.</td>
+      <td>Duration is skill * 2m.</td>
+      <td>Duration is skill * 3m.</td>
+      <td>Duration is skill * 4m.</td>
+    </tr>
+    <tr>
+      <td>Shrapmetal</td>
+      <td>O</td>
+      <td>Phys</td>
+      <td>50</td>
+      <td>Multiple flying fragments.<br>Skill * 1D6 + damage (every shots).</td>
+      <td>3 fragments.<br>Moderate recovery rate.</td>
+      <td>5 fragments.<br>Faster recovery rate.</td>
+      <td>7 fragments.<br>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Shrinking Ray</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>60</td>
+      <td>Single flying bolt. Duration is skill * 5m.<br>A shrunken monster can cause less damage.</td>
+      <td>Reducing to one half normal.</td>
+      <td>Reducing to one third normal.</td>
+      <td>Reducing to one fourth normal.</td>
+    </tr>
+    <tr>
+      <td>Day of Protection</td>
+      <td>D</td>
+      <td>-</td>
+      <td>70</td>
+      <td>Protection from Fire, Electricity, Cold, Poison,<br>Magic, Feather Fall, Wizard Eye on party.</td>
+      <td>Effects increase with skill * 2.</td>
+      <td>Effects increase with skill * 3.</td>
+      <td>Effects increase with skill * 4.</td>
+    </tr>
+    <tr>
+      <td>Finger of Death</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>80</td>
+      <td>Single flying bolt<br>Slay a single creature.</td>
+      <td>The chance is skill * 3%.</td>
+      <td>The chance is skill * 4%.</td>
+      <td>The chance is skill * 5%.</td>
+    </tr>
+    <tr>
+      <td>Moon Ray</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>90</td>
+      <td>Heals the party and damages all monsters in sight.<br>Outdoors works at night only. Skill * 1D4 damage/HP.</td>
+      <td>Slow recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Dragon Breath</td>
+      <td>O</td>
+      <td>Pois</td>
+      <td>100</td>
+      <td>Single flying bolt.<br>Skill * 1D25 damage.</td>
+      <td>Slow recovery rate.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    <tr>
+      <td>Armageddon</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>150</td>
+      <td>Hurts everybody, the party too.<br>Skill + 50 damage. Outdoors works only.</td>
+      <td>Works once per day only.</td>
+      <td>Works twice per day only.</td>
+      <td>Works three times per day only.</td>
+    </tr>
+    <tr>
+      <td>Dark Containment</td>
+      <td>O</td>
+      <td>Magic</td>
+      <td>200</td>
+      <td>Single flying exploding bolt.<br>Causes random effects.</td>
+      <td>Slow rate of recovery.</td>
+      <td>Faster recovery rate.</td>
+      <td>Fastest recovery rate.</td>
+    </tr>
+    </tbody>
+  </table>
+</section>
 <h2><a id="tm">Monsters</a></h2>
 <p>The key for the spells column below:
   <br><code>N </code>= Normal level spells
@@ -8099,5 +8926,5 @@
   </td><td>Ener</td><td>20D5+20</td><td>-</td><td>-</td><td>-
   </td><td>Imm</td><td>Imm</td><td>Imm</td><td>Imm</td><td>Imm</td><td>Imm
 </td></tr></tbody></table>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</body></html>
+</body>
+</html>
