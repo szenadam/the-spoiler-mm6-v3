@@ -17,6 +17,11 @@ table.no-border, table.no-border td {
   border: 0;
 }
 
+#ti > table,
+#ti > table > tbody > tr > td {
+  border: 0;
+}
+
 .dungeon {
   background-color: #a0b0c0;
 }
@@ -86,6 +91,10 @@ table.no-border, table.no-border td {
 
 .center {
   text-align: center;
+}
+
+.v-top {
+  vertical-align: top;
 }
 
 .map-img {
