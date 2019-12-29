@@ -18,7 +18,9 @@ table.no-border, table.no-border td {
 }
 
 #ti > table,
-#ti > table > tbody > tr > td {
+#ti > table > tbody > tr > td,
+#te > table,
+#te > table > tbody > tr > td {
   border: 0;
 }
 
