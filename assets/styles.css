@@ -11,6 +11,10 @@ body {
   align-items: center;
 }
 
+header, section {
+  margin-bottom: 2em;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -22,6 +26,17 @@ header ul {
   grid-template-columns: auto auto auto;
 }
 
+ul, ol {
+  margin-left: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+ul ul,
+ol ol {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 
 table {
   border: 1px outset grey;
@@ -51,7 +66,6 @@ table.no-border, table.no-border td {
 .w-90 { width: 90px; }
 .w-110 { width: 110px; }
 .w-120 { width: 120px; }
-.w-130 { width: 130px; }
 .w-180 { width: 180px; }
 .w-185 { width: 185px; }
 .w-200 { width: 200px; }
@@ -134,10 +148,6 @@ table.no-border, table.no-border td {
   display: inline-grid;
   grid-template-columns: auto auto auto auto auto;
   grid-gap: 0;
-}
-
-.mb-2 {
-  margin-bottom: 2em;
 }
 
 .red {
