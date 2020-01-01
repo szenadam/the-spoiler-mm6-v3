@@ -39,13 +39,12 @@ ol ol {
 }
 
 table {
-  border: 1px outset grey;
-  padding: 1px
+  border-collapse: collapse;
+  margin: 0.5em 0.5em 0.5em 0;
 }
 
-td, th {
-  border: thin inset grey;
-  margin: 1px;
+table, th ,td {
+  border: 1px solid black;
 }
 
 table.no-border, table.no-border td {
