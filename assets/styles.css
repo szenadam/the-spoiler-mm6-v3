@@ -21,6 +21,22 @@ header {
   margin: 1em;
 }
 
+table td {
+  padding: 5px;
+}
+
+td.img-container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+section > table {
+  margin: 0;
+}
+
 header ul {
   display: grid;
   grid-template-columns: auto auto auto;
