@@ -33,6 +33,15 @@ td.img-container {
   text-align: center;
 }
 
+td {
+  vertical-align: top;
+}
+
+td h3,
+td h2 {
+  margin-top: 1em;
+}
+
 section > table {
   margin: 0;
 }
