@@ -182,3 +182,7 @@ table.no-border, table.no-border td {
 #tq, #sq, #tr {
   width: 1240px;
 }
+
+.center-table {
+  margin: 2em auto;
+}
