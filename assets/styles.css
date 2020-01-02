@@ -16,11 +16,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1em;
+  margin: 1rem;
 }
 
 header, section {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 header ul {
@@ -29,9 +29,9 @@ header ul {
 }
 
 ul, ol {
-  margin-left: 2em;
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 ul ul,
@@ -62,7 +62,7 @@ section > table {
 
 table {
   border-collapse: collapse;
-  margin: 0.5em 0.5em 0.5em 0;
+  margin: 0.5rem 0.5rem 0.5rem 0;
 }
 
 table, th, td {
@@ -126,7 +126,7 @@ table.no-border, table.no-border td {
 }
 
 .center-table {
-  margin: 2em auto;
+  margin: 2rem auto;
 }
 
 .w-90 {
