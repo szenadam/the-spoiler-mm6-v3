@@ -12,14 +12,15 @@ body {
   align-items: center;
 }
 
-header, section {
-  margin-bottom: 2em;
-}
-
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 1em;
+}
+
+header, section {
+  margin-bottom: 2em;
 }
 
 header ul {
@@ -49,9 +50,10 @@ table td.img-container {
   margin-left: 0;
   margin-right: 0;
   text-align: center;
+  vertical-align: middle;
 }
 table td h3, table td h2 {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 section > table {
@@ -78,13 +80,12 @@ table.no-border, table.no-border td {
   border: 0;
 }
 
-.dungeon {
-  background-color: #a0b0c0;
+#tq, #sq, #tr {
+  width: 1240px;
 }
 
-.logo {
-  height: 110px;
-  width: 440px;
+.dungeon {
+  background-color: #a0b0c0;
 }
 
 .left {
@@ -122,10 +123,6 @@ table.no-border, table.no-border td {
 
 .red {
   color: red;
-}
-
-#tq, #sq, #tr {
-  width: 1240px;
 }
 
 .center-table {
