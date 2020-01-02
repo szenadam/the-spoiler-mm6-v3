@@ -178,3 +178,7 @@ table.no-border, table.no-border td {
 .red {
   color: red;
 }
+
+#tq, #sq, #tr {
+  width: 1240px;
+}
