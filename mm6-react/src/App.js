@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import DungeonBottomMap from "./DungeonBottomMap";
 
 function App() {
   return (
@@ -192,45 +193,27 @@ function App() {
         </table>
       </section>
 
-      <section id="ns_gw">
-        <table className="w-1240 dungeon">
-          <tbody>
-          <tr>
-            <td className="w-300">
-              <h3>Goblinwatch</h3>
-            </td>
-            <td className="w-503">
-              <h3>Locations</h3>
-              <ol>
-                <li>Switch to open door
-                </li>
-                <li>Switches to open wall (ENILBOG)
-                </li>
-                <li>Chest with Goblinwatch Code Scroll for <a href="#q_3">quest 3</a></li>
-              </ol>
-            </td>
-            <td className="w-437">
-              <ul>
-                <li><a href="#m_hunoi">Goblin, Goblin Shaman, Goblin King</a>
-                </li>
-                <li><a href="#m_beas1">Common Rat, Large Rat, Giant Rat</a>
-                </li>
-                <li><a href="#m_beas1">Bat, Giant Bat, Vampire Bat</a>
-                </li>
-                <li><a href="#m_beas1">Blood Sucker, Brain Sucker, Soul Sucker</a>
-                  <br/>Efficiency level: very easy
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td colSpan="3" className="img-container">
-              <img height="300" width="960" src={require("./assets/imgs/ns-gw.jpg")} alt="Goblinwatch map" />
-            </td>
-          </tr>
-          </tbody>
-        </table>
-      </section>
+      <DungeonBottomMap id='ns_gw' name='Goblinwatch' imgSrc={require("./assets/imgs/ns-gw.jpg")} imgAlt='Goblinwatch map'
+        locations={
+          <ol>
+            <li>Switch to open door
+            </li>
+            <li>Switches to open wall (ENILBOG)
+            </li>
+            <li>Chest with Goblinwatch Code Scroll for <a href="#q_3">quest 3</a></li>
+          </ol>}
+        monsters={
+          <ul>
+            <li><a href="#m_hunoi">Goblin, Goblin Shaman, Goblin King</a>
+            </li>
+            <li><a href="#m_beas1">Common Rat, Large Rat, Giant Rat</a>
+            </li>
+            <li><a href="#m_beas1">Bat, Giant Bat, Vampire Bat</a>
+            </li>
+            <li><a href="#m_beas1">Blood Sucker, Brain Sucker, Soul Sucker</a>
+              <br/>Efficiency level: very easy
+            </li>
+          </ul>} />
 
       <section id="ns_at">
         <table className="w-1240 dungeon">
