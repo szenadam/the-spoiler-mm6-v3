@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import DungeonBottomMap from "./DungeonBottomMap";
+import Map from "./Map";
 
 function App() {
   return (
@@ -31,23 +32,7 @@ function App() {
         </div>
       </header>
 
-      <section className="world-map">
-        <a href="#sw"><img className="map-img" src={require("./assets/imgs/sw_tn.jpg")} alt="Sweet Water map" /></a>
-        <a href="#ks"><img className="map-img" src={require("./assets/imgs/ks_tn.jpg")} alt="Kriegspire map" /></a>
-        <a href="#fz"><img className="map-img" src={require("./assets/imgs/fz_tn.jpg")} alt="Frozen Highlands map" /></a>
-        <a href="#sc"><img className="map-img" src={require("./assets/imgs/sc_tn.jpg")} alt="Silver Cove map" /></a>
-        <a href="#iw"><img className="map-img" src={require("./assets/imgs/iw_tn.jpg")} alt="Eel Infested Waters map" /></a>
-        <a href="#pv"><img className="map-img" src={require("./assets/imgs/pv_tn.jpg")} alt="Paradise Valley map" /></a>
-        <a href="#bs"><img className="map-img" src={require("./assets/imgs/bs_tn.jpg")} alt="Blackshire map" /></a>
-        <a href="#fh"><img className="map-img" src={require("./assets/imgs/fh_tn.jpg")} alt="Free Haven map" /></a>
-        <a href="#bb"><img className="map-img" src={require("./assets/imgs/bb_tn.jpg")} alt="Bootleg Bay map" /></a>
-        <a href="#mi"><img className="map-img" src={require("./assets/imgs/mi_tn.jpg")} alt="Misty Islands map" /></a>
-        <a href="#hi"><img className="map-img" src={require("./assets/imgs/hi_tn.jpg")} alt="Hermit's Isle map" /></a>
-        <a href="#ds"><img className="map-img" src={require("./assets/imgs/ds_tn.jpg")} alt="Dragonsands map" /></a>
-        <a href="#md"><img className="map-img" src={require("./assets/imgs/md_tn.jpg")} alt="Mire of Damned map" /></a>
-        <a href="#ci"><img className="map-img" src={require("./assets/imgs/ci_tn.jpg")} alt="Castle Ironfist map" /></a>
-        <a href="#ns"><img className="map-img" src={require("./assets/imgs/ns_tn.jpg")} alt="New Sorpigal map" /></a>
-      </section>
+      <Map />
 
       <section id="ma">
         <table className="w-1240">
