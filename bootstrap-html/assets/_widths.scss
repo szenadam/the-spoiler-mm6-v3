@@ -1,0 +1,18 @@
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+$widths: 90px, 110px, 120px, 180px, 185px, 200px, 240px, 250px, 260px, 265px, 280px, 290px, 300px, 310px, 320px, 330px,
+340px, 350px, 350px, 360px, 370px, 380px, 390px, 400px, 410px, 430px, 437px, 440px, 450px, 475px, 480px, 490px, 500px,
+503px, 540px, 550px, 555px, 560px, 580px, 600px, 620px, 630px, 650px, 660px, 710px, 720px, 795px, 1240px;
+
+@each $width in $widths {
+  $i: strip-unit($width);
+  .w-#{$i} {
+    width: $width;
+  }
+}
