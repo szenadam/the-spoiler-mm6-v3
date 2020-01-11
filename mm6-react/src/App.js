@@ -4,6 +4,19 @@ import DungeonBottomMap from "./DungeonBottomMap";
 import Map from "./Map";
 
 function App() {
+
+  const dungeons = {
+    goblinWatch: {
+      monsters: [
+        'Goblin, Goblin Shaman, Goblin King',
+        'Common Rat, Large Rat, Giant Rat',
+        'Bat, Giant Bat, Vampire Bat',
+        'Blood Sucker, Brain Sucker, Soul Sucker'
+      ],
+      efficienfyLevel: 'very easy'
+    }
+  }
+
   return (
     <>
       <header className="header">
@@ -178,29 +191,19 @@ function App() {
         </table>
       </section>
 
-      <DungeonBottomMap id='ns_gw' name='Goblinwatch' imgSrc={require("./assets/imgs/ns-gw.jpg")} imgAlt='Goblinwatch map'
+      <DungeonBottomMap id='ns_gw' name='Goblinwatch' 
+        imgSrc={require("./assets/imgs/ns-gw.jpg")} imgAlt='Goblinwatch map'
+        monsters={dungeons.goblinWatch.monsters}
         locations={
           <ol>
             <li>Switch to open door
             </li>
-            <li>Switches to open wall (ENILBOG)
+            <li>Switches to open wall (NILBOG)
             </li>
             <li>Chest with Goblinwatch Code Scroll for <a href="#q_3">quest 3</a></li>
-          </ol>}
-        monsters={
-          <ul>
-            <li><a href="#m_hunoi">Goblin, Goblin Shaman, Goblin King</a>
-            </li>
-            <li><a href="#m_beas1">Common Rat, Large Rat, Giant Rat</a>
-            </li>
-            <li><a href="#m_beas1">Bat, Giant Bat, Vampire Bat</a>
-            </li>
-            <li><a href="#m_beas1">Blood Sucker, Brain Sucker, Soul Sucker</a>
-              <br/>Efficiency level: very easy
-            </li>
-          </ul>} />
+          </ol>}/>
 
-      <section id="ns_at">
+      {/* <section id="ns_at">
         <table className="w-1240 dungeon">
           <tbody>
           <tr>
@@ -11968,7 +11971,7 @@ function App() {
           </tr>
           </tbody>
         </table>
-      </section>
+      </section> */}
     </>
   );
 }
