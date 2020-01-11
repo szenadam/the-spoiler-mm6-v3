@@ -13,7 +13,12 @@ function App() {
         'Bat, Giant Bat, Vampire Bat',
         'Blood Sucker, Brain Sucker, Soul Sucker'
       ],
-      efficienfyLevel: 'very easy'
+      efficienfyLevel: 'very easy',
+      locations: [
+        'Switch to open door',
+        'Switches to open wall (NILBOG)',
+        'Chest with Goblinwatch Code Scroll for quest 3'
+      ]
     }
   }
 
@@ -194,14 +199,8 @@ function App() {
       <DungeonBottomMap id='ns_gw' name='Goblinwatch' 
         imgSrc={require("./assets/imgs/ns-gw.jpg")} imgAlt='Goblinwatch map'
         monsters={dungeons.goblinWatch.monsters}
-        locations={
-          <ol>
-            <li>Switch to open door
-            </li>
-            <li>Switches to open wall (NILBOG)
-            </li>
-            <li>Chest with Goblinwatch Code Scroll for <a href="#q_3">quest 3</a></li>
-          </ol>}/>
+        locations={dungeons.goblinWatch.locations}
+        efficienfyLevel={dungeons.goblinWatch.efficienfyLevel}/>
 
       {/* <section id="ns_at">
         <table className="w-1240 dungeon">

@@ -8,27 +8,40 @@ function MonsterFactory(props) {
     case 'Common Rat, Large Rat, Giant Rat':
     case 'Bat, Giant Bat, Vampire Bat':
     case 'Blood Sucker, Brain Sucker, Soul Sucker':
-        return <a href="#m_beas1">{monster}</a>;
+      return <a href="#m_beas1">{monster}</a>;
     default:
       return <></>;
   }
 }
 
 function Monsters(props) {
-  const { data, efficienfyLevel } = props;
+  const { monsters, efficienfyLevel } = props;
 
   return (
     <ul>
-      {data.map(el => {
-        return <li><MonsterFactory monster={el}/></li>;
+      {monsters.map((el, idx) => {
+        return (
+          <li key={idx}>
+            <MonsterFactory monster={el} />
+          </li>
+        );
       })}
-      Efficiency level: <b>{efficienfyLevel}</b>
+      Efficiency level: {efficienfyLevel}
     </ul>
   );
 }
 
+function Locations(props) {
+  const { locations } = props;
+  return (
+    <ol>
+      {locations.map((el, idx) => <li key={idx}>{el}</li>)}
+    </ol>
+  );
+}
+
 function DungeonBottomMap(props) {
-  const { monsters, efficienfyLevel } = props
+  const { monsters, efficienfyLevel } = props;
   return (
     <section id={props.id}>
       <table className="w-1240 dungeon">
@@ -39,11 +52,11 @@ function DungeonBottomMap(props) {
             </td>
             <td className="w-503">
               <h3>Locations</h3>
-              {props.locations}
+              <Locations locations={props.locations} />
             </td>
             <td className="w-437">
               <h3>Monsters</h3>
-              <Monsters data={monsters} efficienfyLevel={efficienfyLevel} />
+              <Monsters monsters={monsters} efficienfyLevel={efficienfyLevel} />
             </td>
           </tr>
           <tr>
