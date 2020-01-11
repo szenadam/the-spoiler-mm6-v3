@@ -1,3 +1,17 @@
 html {
   font-size: 16px;
 }
+
+.world-map {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 0;
+  width: auto;
+}
+
+@media screen and (min-width: 1220px) {
+  .world-map {
+    width: 1220px;
+  }
+}
