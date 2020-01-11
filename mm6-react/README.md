@@ -9,5 +9,11 @@ The Spoiler: MM6 refactored with React.
 ## Build
 
 ```shell script
-$ npm run build
+npm run build
+```
+
+## Test
+
+```shell script
+npm test
 ```
