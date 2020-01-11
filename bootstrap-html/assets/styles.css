@@ -14,8 +14,19 @@ body {
   width: auto;
 }
 
+#ns h3 + ol {
+  column-count: 3;
+  column-gap: 30px;
+}
+
 @media screen and (min-width: 1220px) {
   .world-map {
     width: 1220px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #ns h3 + ol {
+    column-count: 1;
   }
 }
