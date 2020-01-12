@@ -19,6 +19,11 @@ body {
   column-gap: 30px;
 }
 
+#ci h3 + ul,
+#ci h3 + ol {
+  column-count: 2;
+}
+
 @media screen and (min-width: 1220px) {
   .world-map {
     width: 1220px;
@@ -26,7 +31,9 @@ body {
 }
 
 @media screen and (max-width: 540px) {
-  #ns h3 + ol {
+  #ns h3 + ol,
+  #ci h3 + ul,
+  #ci h3 + ol {
     column-count: 1;
   }
 }
